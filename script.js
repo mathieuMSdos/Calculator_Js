@@ -6,6 +6,7 @@ let equal = "";
 let resume = "";
 let idKey;
 let result = "";
+let dividerBreak ="";
 const btnTab = document.querySelector(".btnTab");
 const screenOperator = document.querySelector("#screenOperator");
 const screenResult = document.querySelector("#screenResult");
@@ -35,7 +36,12 @@ const operatorManager = () => {
 const doOperation = (operator, numberA, numberB) => {
   switch (operator) {
     case "/":
+      if(numberA === 0 || numberB === 0) {
+        dividerBreak = "error"
+        screenResult.innerHTML = dividerBreak;
+      } else {
       return numberA / numberB;
+      }
       break;
     case "x":
       return numberA * numberB;
@@ -56,7 +62,7 @@ const calculator = () => {
     parseFloat(numberChosen),
     parseFloat(numberChosen2)
   );
-  result = Math.round(result * 100) / 100;
+  result = Math.round(result * 100) / 1000;
 };
 
 const displayNumberWithSpace = (number) => {
