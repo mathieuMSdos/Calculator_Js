@@ -7,7 +7,6 @@
 
   border-radius: 0px 0px 20px 20px;
   background-color: rgba(255, 255, 255, 0.132);
-  
 }
 
 .btnTab {
@@ -85,6 +84,7 @@
   justify-content: center;
 
   cursor: pointer;
+  user-select: none;
 
   color: rgb(255, 255, 255);
   font-family: "Sora", sans-serif;
@@ -98,16 +98,13 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-
-
 /******* hover effect on button if its available on the device *******/
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .btnTab div:hover {
     background-color: rgba(255, 255, 255, 0.715);
-    
   }
-  
+
   #equal:hover,
   #erase:hover {
     background-color: hsla(31, 100%, 68%, 0.737);
@@ -116,26 +113,23 @@
 
   .btnTab div:active {
     transform: scale(0.97);
-    box-shadow: ;
   }
 
   #equal:active,
   #erase:active {
     transform: scale(0.97);
   }
-
 }
 
 /******* alternative effect on button if hover is not available on the device (touch device) *******/
 
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
   .btnTab div:active {
     border: 1px solid rgba(255, 255, 255, 0.6);
-    background-color: rgba(255, 255, 255, 0.715);
+    background-color: ²rgba(255, 255, 255, 0.715);
     transform: scale(0.97);
-
   }
-  
+
   #equal:active,
   #erase:active {
     background-color: hsla(31, 100%, 68%, 0.737);
