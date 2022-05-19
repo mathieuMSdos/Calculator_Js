@@ -94,19 +94,52 @@
 
   border-radius: 2px;
 
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out, transform 0.1s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/******* Button style *******/
 
-.btnTab div:hover {
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  background-color: rgba(255, 255, 255, 0.715);
+
+/******* hover effect on button if its available on the device *******/
+
+@media (hover: hover) {
+  .btnTab div:hover {
+    background-color: rgba(255, 255, 255, 0.715);
+    
+  }
+  
+  #equal:hover,
+  #erase:hover {
+    background-color: hsla(31, 100%, 68%, 0.737);
+    border: 1px solid hsla(31, 100%, 78%, 0.737);
+  }
+
+  .btnTab div:active {
+    transform: scale(0.97);
+    box-shadow: ;
+  }
+
+  #equal:active,
+  #erase:active {
+    transform: scale(0.97);
+  }
+
 }
 
-#equal:hover,
-#erase:hover {
-  background-color: hsla(31, 100%, 68%, 0.737);
-  border: 1px solid hsla(31, 100%, 78%, 0.737);
+/******* alternative effect on button if hover is not available on the device (touch device) *******/
+
+@media (hover: none) {
+  .btnTab div:active {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.715);
+    transform: scale(0.97);
+
+  }
+  
+  #equal:active,
+  #erase:active {
+    background-color: hsla(31, 100%, 68%, 0.737);
+    border: 1px solid hsla(31, 100%, 78%, 0.737);
+    transform: scale(0.97);
+  }
 }
