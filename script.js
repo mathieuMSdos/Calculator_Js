@@ -62,7 +62,7 @@ const calculator = () => {
     parseFloat(numberChosen),
     parseFloat(numberChosen2)
   );
-  result = Math.round(result * 100) / 1000;
+  result = Math.round(result * 100) / 100;
 };
 
 const displayNumberWithSpace = (number) => {

@@ -113,7 +113,6 @@
 
   .btnTab div:active {
     transform: scale(0.97);
-    box-shadow: ;
   }
 
   #equal:active,
