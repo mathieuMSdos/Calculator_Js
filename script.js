@@ -1,4 +1,8 @@
 //************** VARIABLES
+const btnTab = document.querySelector(".btnTab");
+const screenOperator = document.querySelector("#screenOperator");
+const screenResult = document.querySelector("#screenResult");
+
 let numberChosen = "";
 let numberChosen2 = "";
 let operatorChosen = "";
@@ -7,9 +11,6 @@ let resume = "";
 let idKey;
 let result = "";
 let dividerBreak = "";
-const btnTab = document.querySelector(".btnTab");
-const screenOperator = document.querySelector("#screenOperator");
-const screenResult = document.querySelector("#screenResult");
 
 //************** FUNCTIONS
 

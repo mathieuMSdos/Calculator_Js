@@ -88,6 +88,7 @@
   align-items: center;
   justify-content: right;
   text-align: right;
+  text-align: -webkit-right; /*for safari*/
 
   overflow: hidden;
 
@@ -112,6 +113,7 @@
   align-items: center;
   justify-content: right;
   text-align: right;
+  text-align: -webkit-right;
 
   overflow: hidden;
 
