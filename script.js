@@ -6,7 +6,7 @@ let equal = "";
 let resume = "";
 let idKey;
 let result = "";
-let dividerBreak ="";
+let dividerBreak = "";
 const btnTab = document.querySelector(".btnTab");
 const screenOperator = document.querySelector("#screenOperator");
 const screenResult = document.querySelector("#screenResult");
@@ -36,11 +36,11 @@ const operatorManager = () => {
 const doOperation = (operator, numberA, numberB) => {
   switch (operator) {
     case "/":
-      if(numberA === 0 || numberB === 0) {
-        dividerBreak = "error"
+      if (numberB === 0) {
+        dividerBreak = "error";
         screenResult.innerHTML = dividerBreak;
       } else {
-      return numberA / numberB;
+        return numberA / numberB;
       }
       break;
     case "x":
