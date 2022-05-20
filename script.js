@@ -85,7 +85,10 @@ const show = () => {
 //************** CODE EXECUTION
 
 btnTab.addEventListener("click", (e) => {
+
   idKey = e.target.id;
+
+  //listen number buttons pressed
   if (/t/.test(idKey)) {
     if (operatorChosen == "") {
       numberChosen += idKey.substring(1, 2);
@@ -94,6 +97,8 @@ btnTab.addEventListener("click", (e) => {
       parseFloat(numberChosen2);
     }
     show();
+
+    //listen erase button pressed
   } else if (/erase/.test(idKey)) {
     numberChosen = "";
     numberChosen2 = "";
@@ -104,24 +109,44 @@ btnTab.addEventListener("click", (e) => {
     result = "";
     screenOperator.innerHTML = "";
     screenResult.innerHTML = "";
+
+    //listen operator button pressed
   } else if (/z/.test(idKey)) {
-    operatorChosen = operatorManager();
-    show();
-  } else if (/floa/.test(idKey)) {
-    if (operatorChosen == "") {
-      if (/[.]/.test(numberChosen)) {
-        //do nothing
-      } else {
-        numberChosen += ".";
-      }
+    if (numberChosen == "") {
+      //do nothing
     } else {
-      if (/[.]/.test(numberChosen2)) {
-        //do nothing
+      operatorChosen = operatorManager();
+      show();
+    }
+
+    //listen dot button pressed
+  } else if (/floa/.test(idKey)) {
+    if (numberChosen == "") {
+      // do nothing
+    } else {
+      if (operatorChosen == "") {
+        //regex double dot test
+        if (/[.]/.test(numberChosen)) {
+          //do nothing
+        } else {
+          numberChosen += ".";
+        }
       } else {
-        numberChosen2 += ".";
+        if (/[.]/.test(numberChosen2)) {
+          //do nothing
+        } else {
+          if(numberChosen2 == "") {
+// do nothing
+          } else {
+          numberChosen2 += ".";
+        }
+        }
       }
     }
+    
     show();
+
+    //listen equal button pressed
   } else if (/equal/.test(idKey)) {
     equal = "=";
     calculator();
