@@ -109,10 +109,17 @@ btnTab.addEventListener("click", (e) => {
     show();
   } else if (/floa/.test(idKey)) {
     if (operatorChosen == "") {
-      numberChosen += ".";
+      if (/[.]/.test(numberChosen)) {
+        //do nothing
+      } else {
+        numberChosen += ".";
+      }
     } else {
-      numberChosen2 += ".";
-      parseFloat(numberChosen2);
+      if (/[.]/.test(numberChosen2)) {
+        //do nothing
+      } else {
+        numberChosen2 += ".";
+      }
     }
     show();
   } else if (/equal/.test(idKey)) {
