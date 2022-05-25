@@ -82,7 +82,7 @@ const show = () => {
   }
 };
 
-//************** CODE EXECUTION
+//************** EXECUTION
 
 btnTab.addEventListener("click", (e) => {
 

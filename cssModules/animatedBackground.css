@@ -116,7 +116,7 @@
   color: #ac93ff;
 }
 
-.circles li:nth-child(11) {
+.add li:nth-child(1) {
   left: 13%;
   width: 60px;
   height: 60px;
@@ -125,7 +125,7 @@
   font-size: 4em;
 }
 
-.circles li:nth-child(12) {
+.add li:nth-child(2) {
   left: 23%;
   width: 20px;
   height: 20px;
@@ -134,7 +134,7 @@
   font-size: 2em;
 }
 
-.circles li:nth-child(13) {
+.add li:nth-child(3) {
   left: 64%;
   width: 20px;
   height: 20px;
@@ -142,7 +142,7 @@
   animation-duration: 22s;
 }
 
-.circles li:nth-child(14) {
+.add li:nth-child(4) {
   left: 27%;
   width: 60px;
   height: 60px;
@@ -151,7 +151,7 @@
   font-size: 3em;
 }
 
-.circles li:nth-child(15) {
+.add li:nth-child(5) {
   left: 84%;
   width: 20px;
   height: 20px;
@@ -160,7 +160,7 @@
   font-size: 2em;
 }
 
-.circles li:nth-child(16) {
+.add li:nth-child(6) {
   left: 55%;
   width: 110px;
   height: 110px;
@@ -169,7 +169,7 @@
   font-size: 3em;
 }
 
-.circles li:nth-child(17) {
+.add li:nth-child(7) {
   left: 22%;
   width: 150px;
   height: 150px;
@@ -177,7 +177,7 @@
   font-size: 4em;
 }
 
-.circles li:nth-child(18) {
+.add li:nth-child(8) {
   left: 34%;
   width: 25px;
   height: 25px;
@@ -185,7 +185,7 @@
   animation-duration: 33s;
 }
 
-.circles li:nth-child(19) {
+.add li:nth-child(9) {
   left: 14%;
   width: 15px;
   height: 15px;
@@ -193,7 +193,7 @@
   animation-duration: 47s;
 }
 
-.circles li:nth-child(20) {
+.add li:nth-child(10) {
   left: 64%;
   width: 150px;
   height: 150px;
