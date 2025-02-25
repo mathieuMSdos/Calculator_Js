@@ -1,6 +1,6 @@
 ### The project
 
-Personal project in which I coded back-end and front-end after learning HTML, CSS and JavaScript vanilla.
+Personal project coded after learning HTML, CSS and JavaScript vanilla.
 
 ### Links
 
